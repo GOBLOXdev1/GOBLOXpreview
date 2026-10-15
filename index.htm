@@ -1,0 +1,118 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#202a38">
+  <meta name="description" content="Explore GOBLOX Preview, a classic-inspired game platform.">
+  <title>GOBLOX Preview</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="app.js" defer></script>
+</head>
+<body>
+  <header class="topbar">
+    <a class="brand" href="#" aria-label="GOBLOX home">
+      <span class="brand-icon">G</span>
+      <span>GO<span class="brand-light">BLOX</span></span>
+      <span class="preview-tag">PREVIEW</span>
+    </a>
+
+    <nav class="main-nav" aria-label="Main navigation">
+      <button class="nav-button active" data-page="home">Home</button>
+      <button class="nav-button" data-page="games">Games</button>
+      <button class="nav-button" data-page="avatar">Avatar</button>
+      <button class="nav-button" data-page="shop">Shop</button>
+    </nav>
+
+    <div class="account-area">
+      <span class="currency">◈ <span id="credits">100</span></span>
+      <button class="login-button" id="accountButton">Guest</button>
+    </div>
+  </header>
+
+  <main class="layout">
+    <aside class="sidebar">
+      <p class="sidebar-label">PLATFORM</p>
+      <button class="side-link selected" data-page="home">⌂ <span>Home</span></button>
+      <button class="side-link" data-page="games">▦ <span>Discover games</span></button>
+      <button class="side-link" data-page="avatar">♟ <span>Avatar workshop</span></button>
+      <button class="side-link" data-page="shop">◈ <span>GOcredits shop</span></button>
+
+      <div class="sidebar-footer">
+        <span class="status-dot"></span>
+        Preview build
+        <p>GOBLOX platform concept</p>
+      </div>
+    </aside>
+
+    <section class="content" id="pageContent" aria-live="polite">
+      <section class="welcome-panel">
+        <div>
+          <span class="eyebrow">WELCOME TO THE NEXT BUILD</span>
+          <h1>Your next adventure<br>starts here.</h1>
+          <p>Discover worlds. Build your avatar. Make something legendary.</p>
+          <button class="primary-button" data-page="games">Explore games →</button>
+        </div>
+        <div class="hero-art" aria-hidden="true">
+          <div class="sun"></div>
+          <div class="block block-one"></div>
+          <div class="block block-two"></div>
+          <div class="block block-three"></div>
+          <div class="ground"></div>
+        </div>
+      </section>
+
+      <div class="section-heading">
+        <div>
+          <h2>Featured experiences</h2>
+          <p>Worlds waiting to be explored.</p>
+        </div>
+        <button class="text-button" data-page="games">View all →</button>
+      </div>
+
+      <section class="game-grid" id="gameGrid">
+        <article class="game-card">
+          <div class="game-art art-green"><span>🌳</span><b>01</b></div>
+          <div class="game-info">
+            <h3>Starter Valley</h3>
+            <p>Explore · Adventure</p>
+            <button class="play-button" data-game="Starter Valley">View experience</button>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-art art-blue"><span>🏙️</span><b>02</b></div>
+          <div class="game-info">
+            <h3>Block City</h3>
+            <p>Building · Sandbox</p>
+            <button class="play-button" data-game="Block City">View experience</button>
+          </div>
+        </article>
+
+        <article class="game-card">
+          <div class="game-art art-orange"><span>🚀</span><b>03</b></div>
+          <div class="game-info">
+            <h3>Orbit Run</h3>
+            <p>Arcade · Obby</p>
+            <button class="play-button" data-game="Orbit Run">View experience</button>
+          </div>
+        </article>
+      </section>
+
+      <section class="notice-panel">
+        <div class="notice-icon">⚙</div>
+        <div>
+          <h3>You're using GOBLOX Preview</h3>
+          <p>This is an early interface prototype. Online multiplayer, real accounts, and server-backed currency aren't connected yet.</p>
+        </div>
+      </section>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <span>GOBLOX Preview</span>
+    <span>Built for the next generation of worlds.</span>
+  </footer>
+</body>
+</html>
